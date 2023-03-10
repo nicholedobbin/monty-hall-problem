@@ -59,7 +59,6 @@ export default function App() {
     const randomNumber = getRndInteger();
     let randomLosingDoor = getRndInteger();
     let winningDoorKey = null;
-    let losingDoorKey = null;
     
     // 'For of' loop matches the randomNumber and door index, and assigns that door's winningDoor value as true.
     for (const door of doorsArray) {
@@ -70,41 +69,31 @@ export default function App() {
       }
     }
     
-    // 'For of' loop gets a new randomLosingDoor number if it matches the winningDoorKey (i.e. ensures the 
+    // 'For' loop gets a new randomLosingDoor number if it matches the winningDoorKey (i.e. ensures the 
     // winning and losing doors are not the same).
-    for (const door of doorsArray) {
+    for (let i = 0; i < doorsArray.length; i++) {
       while (winningDoorKey === randomLosingDoor) {
         randomLosingDoor = getRndInteger();
         break; 
       }
     }
 
-    // Set the index of randomLosingDoor's isRandomLosingDoor property to true (i.e. assign the randomLosingDoor) 
-    // and set losingDoorKey value to that door's key.
+    // Set the index of randomLosingDoor's isRandomLosingDoor property to true (i.e. assign the randomLosingDoor).
     setDoorsArray(doorsArray[randomLosingDoor].isRandomLosingDoor = true);
-    losingDoorKey = doorsArray[randomLosingDoor].key;
 
     // Set doors array with winning and random losing door updates.
     setDoorsArray(doorsArray);
-    // Check updates are complete/correct (commented out - leaving here for checking purposes only).
-    // console.log("doors array after setting state");
-    // console.log(doorsArray);
   }
 
   // ---------- FUNCTION: HANDLE CLICK ---------- 
   // Handles click counts for each door, opening the non-selected losing door on first click, 
   // and opens the selected door on second click.
   function handleClick(currentDoor) {
-    // 
     setClickCount(prevClick => prevClick + 1);
     let losingDoorKey;
-    let winningDoorKey;
     for (const door of doorsArray) {
       if (door.isRandomLosingDoor === true) {
         losingDoorKey = door.key;
-      }
-      if (door.winningDoor === true) {
-        winningDoorKey = door.key;
       }
     }
 
