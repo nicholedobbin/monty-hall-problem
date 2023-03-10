@@ -14,13 +14,12 @@ export default function Footer() {
         <div className="footerSection">
             <p>
                Made by
-               &nbsp;<a href="https://github.com/nicholedobbin" target="_blank">Nichole</a>&nbsp;
+               &nbsp;<a href="https://github.com/nicholedobbin" target="_blank" rel="noreferrer">Nichole</a>&nbsp;
                with
-               &nbsp;<a href="https://github.com/facebook/create-react-app" target="_blank">Create React App</a>&nbsp; 
+               &nbsp;<a href="https://github.com/facebook/create-react-app" target="_blank" rel="noreferrer">Create React App</a>&nbsp; 
                .
             </p>
         </div>
-        
     </div>
   )
 }
