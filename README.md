@@ -9,7 +9,7 @@ In this game, the user is presented with three closed doors. Behind one of the d
 The brain-teaser part of this game occurs because, when programmed to randomly assign the winning door, the probability of the winning door being the opposite door of the initially selected door is correct roughly two-thirds of the time.
 
 #### **Play with Netlify** 
-Netlify app: 
+Netlify app: [https://react-monty-hall-problem.netlify.app/](https://react-monty-hall-problem.netlify.app/)
 <br>
 
 ## **Components Description**
