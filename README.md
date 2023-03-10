@@ -1,17 +1,18 @@
-# **IFS L4T20 - React IV: Managing State - Compulsory Task 1**
+# **IFS L4T20 - React 4: Managing State - Compulsory Task 1**
 
 ## **Description**
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-It is a React app that simulates the Monty Hall problem (a probability brain teaser, named after the original host of an American TV game show called "Let's Make a Deal").
+This is a React app that simulates the Monty Hall problem (a probability brain teaser, named after the original host of an American TV game show called "Let's Make a Deal"). This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### **How to play** 
 In this game, the user is presented with three closed doors. Behind one of the doors is a prize, and behind the remaining two doors is a "goat" (i.e. a non-prize or nothing). The player selects a door, after which the non-prize door of the remaining unselected doors is opened. The player is then offered a final chance to change their mind (i.e. change their selection to the last remaining closed door), or keep their originally selected door. This is the player's final selection, and the door is opened upon selection, revealing whether their chosen door is a prize or a goat.
 
 The brain-teaser part of this game occurs because, when programmed to randomly assign the winning door, the probability of the winning door being the opposite door of the initially selected door is correct roughly two-thirds of the time.
 
-A description of each component and their related files and content are as follows:
+#### **Play with Netlify** 
+Netlify app: 
 <br>
 
-
+## **Components Description**
 ### **1. The [App.js](/src/App.js) component**
 This is the main (parent) function component that sets state with the useState hook and contains the 
 following functions:
@@ -36,20 +37,16 @@ This is the Footer function component which returns the page footer contents.
 
 ### **6. The [App.css](/src/App.css) Stylesheet**
 This is the stylesheet for the app.
-<br>
-<br>
+
 <hr>
-<br>
 
 ## **Installation and Usage**
 1. Download the files in this repo. 
 2. Navigate to the directory that you saved the download, open command line/terminal and type `npm install` where the package.json file is located.
 3. In the same directory folder, open command line/terminal and run `npm start`. This runs the monty hall app in the development mode (i.e. locally).
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-<br>
-<br>
+
 <hr>
-<br>
 
 ## **Credit and References**
-Made by [Nichole Dobbin](https://github.com/nicholedobbin).
+Made by [Nichole Dobbin](https://github.com/nicholedobbin), for my [HyperionDev](https://www.hyperiondev.com/) course.
